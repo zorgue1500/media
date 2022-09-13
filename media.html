@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Média</h1>
+<p>Nome:</p>
+<input type="name" id="no">
+<p>N1:</p>
+<input type="number" id="n1">
+<p>N2:</p>
+<input type="number" id="n2">
+<p>N3:</p>
+<input type="number" id="n3">
+<p>N4:</p>
+<input type="number" id="n4">
+<p>N5:</p>
+<input type="number" id="n5">
+<br><br>
+<button onclick="aparecer()">Enter</button><br><br>
+<span id="nome"></span>, sua média é <span id="media"></span>
+
+<script>
+var n1 = document.querySelector('#n1')
+var n2 = document.querySelector('#n2')
+var n3 = document.querySelector('#n3')
+var n4 = document.querySelector('#n4')
+var n5 = document.querySelector('#n5')
+var nome = document.querySelector('#nome')
+var resultado = document.querySelector('#media')
+
+function aparecer(){
+    resultado.innerHTML = (parseInt(n1.value) + parseInt(n2.value) + parseInt(n3.value) + parseInt(n4.value) + parseInt(n4.value)) / 5
+    nome.innerHTML = no.value
+} 
+</script>
+
+
+
+
+</body>
+</html>
